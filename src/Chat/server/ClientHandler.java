@@ -48,6 +48,7 @@ public class ClientHandler {
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
+                        serv.unsubscribe(ClientHandler.this);
                     }
                 }
             }).start();
